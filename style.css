@@ -1,0 +1,151 @@
+.hero-section {
+  background: #FF8482;
+  width: 100%;
+  height: 768px;
+  padding-top: 72px;
+}
+
+.hero-section img {
+  width: 100%;
+  height: auto;
+}
+
+.navBar-mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  padding: 16px;
+  display: flex;
+  background: #FF8482;
+  
+}
+
+.navBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  padding: 16px 48px;
+  display: none;
+}
+
+.menu-mobile {
+  width: 100%;
+  height: 100vh;
+  background: rgba(255, 132, 130, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-mobile.active {
+  display: flex;
+}
+
+@media only screen and (min-width: 992px)  {
+
+  .navBar-mobile {
+    display: none;
+  }
+  
+  .navBar {
+    display: flex;
+    
+  }
+}
+
+
+
+.nav-item {
+  margin: 0 12px;
+  color: white;
+  font-size: 14px;
+}
+
+.menu-mobile .nav-item {
+  font-size: 24px;
+  margin: 24px;
+  text-align: center;
+}
+
+.close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: white;
+  width: 24px;
+  height: 24px;
+}
+
+.sign-up {
+  background: transparent;
+  border: 1px solid white;
+  padding: 10px 48px;
+  color: white;
+  border-radius: 3px;
+}
+
+.hero-info p {
+  font-size: 20px;
+  color: white;
+}
+
+.hero-info input {
+  background: #FFFFFF;
+  border: 1px solid #DADADA;
+  border-radius: 3px;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 16px;
+  margin-right: 24px;
+}
+
+.hero-info button {
+  height: 40px;
+  width: 150px;
+  background: #FFFFFF;
+  border: 2px solid #2B2B2B;
+  border-radius: 3px;
+}
+
+
+
+/* @media only screen and (min-width: 1200px) and (min-width: 992px)  { */
+@media only screen and (min-width: 992px)  {
+
+  .hero-section {
+    padding-top: 160px;
+  }
+  
+  
+  .hero-info input {
+    width: 250px;
+    height: 48px;
+    margin-right: 24px;
+  }
+
+  .hero-info button {
+    height: 48px;
+    width: 150px;
+  }
+}
+
+@media only screen and (min-width: 1200px)  {
+  .hero-info input {
+    width: 270px
+  }
+
+  .hero-info button {
+    width: 170px;
+  }
+
+  
+}
